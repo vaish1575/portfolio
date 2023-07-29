@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  padding: 0;
+    
+  
+  
+
+ background-color: rgb(4, 2, 22);
+}
+#wrapper {
+  position: relative;
+  height: 100vh;
+}
+#slider-area {
+  background-image: url("hello.jpg");
+  background-size: cover; 
+  background-position: center center;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+#slider-area::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+#slider-area .owl-item div {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+#wrapper #nav-area {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  text-align: center;
+  z-index: 1;
+}
+.nav-area {
+  text-align: center;
+  padding: 26px 0;
+}
+.nav a {
+  font-family: montserrat;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 0 15px;
+  padding: 10px;
+  transition: all 0.6s ease;
+}
+.nav a:hover {
+  background: coral;
+}
+.logo {
+  margin-left: 1000px;
+  top: 1500px;
+}
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #1668a8;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(5, 5, 5);
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.slider-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.slider-text h2 {
+  font-family: montserrat;
+  font-size: 55px;
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+.slider-text h2 span {
+  color: coral;
+}
+.slider-text h3{
+  font-size: 18px;
+  color: #fff;
+}
+.slider-text a {
+  text-decoration: none;
+  background: coral;
+  color: #fff;
+  display: inline-block;
+  padding: 12px 45px;
+  margin: 15px;
+  text-transform: uppercase;
+  font-family: montserrat;
+  font-weight: 500;
+  border: 2px solid #fff;
+}
+.slider-text a.btn {
+  background-color: transparent;
+}
+.aboutus1 p {
+  color: #fff;
+  text-align: justify;
+  font-size: 30px;
+  margin-left: 300px;
+  margin-right: 300px;
+  font-family: 500 1rem 'Quicksand', sans-serif;
+}
+.aboutus1 h2 {
+  font-family: montserrat;
+  font-size: 55px;
+  margin: 0;
+  text-align: center;
+  /* margin-left: 600px;
+  margin-right: 300px; */
+  color: #fff;
+  text-transform: uppercase;
+}
+.aboutus1 h2 span {
+  color: coral;
+}
+
+
+
+.project1 h2 {
+  font-family: montserrat;
+  font-size: 55px;
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  /* margin-left: 600px;
+  margin-right: 300px; */
+}
+.project1 h2 span {
+  color: coral;
+}
+.project2 {
+  display: flex;
+  flex-direction: row;
+}
+.project {
+  margin-left: 90px;
+  margin-right: 30px;
+}
+
+
+.contact1 h2 {
+  font-family: montserrat;
+  font-size: 55px;
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  /* margin-left: 500px;
+  margin-right: 300px; */
+}
+.contact1 h2 span {
+  color: coral;
+}
+
+.contact2 {
+  margin-left: 100px;
+  margin-right: 50px;
+}
+.contact2 p {
+  color: #fff;
+  text-align: justify;
+  font-size: 25px;
+  text-align: center;
+  /* margin-left: 300px;
+  margin-right: 300px; */
+  font-family: 500 1rem 'Quicksand', sans-serif;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: #fff;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: 0ch;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+ .imgcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:30vh
+   /* Adjust this value based on your requirements */
+ }
+ .container{
+
+  width: 250px; /* Adjust this value based on your desired size */
+   height: 250px;/* Adjust this value based on your desired size */
+  border-radius: 50%; /* Make the container circular */
+  overflow : hidden; /* Clip any content outside the circular container */
+}
+
+.container img {
+  width: 100%; /* Make the image fill the circular container */
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and fill the container */
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+  
+  
+  .email-button, .linkedin-button,.github-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    background-color: coral; /* LinkedIn button color */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+
+  .button-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+
+  .email-button:hover, .linkedin-button:hover, .github-button:hover {
+    background-color: #0077B5; /* LinkedIn button hover color */
+  }
